@@ -87,23 +87,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         </p>
         <ul class="list-inline list-social-icons mb-0">
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/stephenporter4/" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/stephen-porter-a0122845" target="_blank">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/StephenMP" target="_blank">
+            <a href="https://github.com/StephenMP" data-toggle="tooltip" title="GitHub" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -111,7 +95,32 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="mailto:1.stephen.porter@gmail.com">
+            <a href="https://bitbucket.org/OwnAptLLC" data-toggle="tooltip" title="OwnApt BitBucket" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-bitbucket fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/stephen-porter-a0122845" data-toggle="tooltip" title="Linkedin"
+              target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/stephenporter4/" data-toggle="tooltip" title="Facebook" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="mailto:1.stephen.porter@gmail.com" data-toggle="tooltip" title="Email">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -128,8 +137,14 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <section class="resume-section p-3 p-lg-5 " id="experience">
       <div class="row my-auto">
         <div class="col-12">
-          <h2 class="  text-center">Experience</h2>
+          <h2 class="text-center">Experience</h2>
           <div class="mb-5 heading-border"></div>
+          <div class="subheading">
+            <p>
+              Below is a list of my most recent, relevant experience. Digital copies of my resume can be found <a
+                href="https://drive.google.com/file/d/1akyouOED-sp-efVjRdDzVGR11ZjARuOn/view?usp=sharing">HERE.</a>
+            </p>
+          </div>
         </div>
         <div class="resume-item col-md-6 col-sm-12 ">
           <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
@@ -394,7 +409,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           <div class="award">
             <div class="award-icon"></div>
             <div class="award-content">
-              <span class="date">Jan 18, 2016</span>
+              <span class="date">Sep 10, 2015</span>
               <h4>Comparison of Callus Detection using 2D Computerized Radiographic Image Analysis and 3D Computed
                 Tomography Scans</h4>
               <h6>American Academy of Orthopaedic Surgeons</h6>
@@ -411,7 +426,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           <div class="award">
             <div class="award-icon"></div>
             <div class="award-content">
-              <span class="date">Jan 18, 2016</span>
+              <span class="date">Nov 2013</span>
               <h4>A Portable Software Application to Measure Fracture Callus in Radiographs</h4>
               <h6>Orthopaedic Research Society</h6>
               <p class="description">
@@ -437,6 +452,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
   <script src="js/custom.js"></script>
   <script>
     $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
 
       $(".filter-b").click(function () {
         var value = $(this).attr('data-filter');
