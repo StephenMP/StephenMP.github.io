@@ -208,6 +208,38 @@ a:active {
   }
 
 /*==================================================
+                      COVER
+====================================================*/
+@media only screen and (min-width: 1141px) {
+    #cover {
+        visibility: hidden !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        min-height: 0;
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 1141px) {
+    #cover {
+        visibility: visible !important;
+        background-image: url(../img/cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #cover {
+        visibility: visible !important;
+        background-image: url(../img/cover-small.jpg);
+        background-position: center;
+        height: 287px;
+    }
+}
+
+/*==================================================
                       ABOUT
 ====================================================*/
   #about {
@@ -218,18 +250,18 @@ a:active {
   }
 
   #about-quote {
-      max-width: 75%;
+      max-width: 60%;
   }
 
   #about-quote-person {
-      max-width: 75%;
+      max-width: 60%;
       text-align: right;
   }
 
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1140px) {
     #about {
         background-image: none; 
+        background: #f5f5f5;
     }
 }
 
