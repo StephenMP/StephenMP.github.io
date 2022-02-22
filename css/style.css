@@ -230,7 +230,7 @@ a:active {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #cover {
         visibility: visible !important;
         background-image: url(../img/cover-small.jpg);
